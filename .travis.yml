@@ -1,0 +1,27 @@
+sudo: false
+
+language: ruby
+
+rvm:
+  - 2.3.3
+  - 2.4.0
+
+before_install:
+  - gem update --system
+  - gem install bundler
+
+cache: bundler
+script: make build
+
+deploy:
+  - provider: pages
+    cleanup: false
+    github_token: $GITHUB_TOKEN
+    keep_history: false
+    local_dir: build
+    committer_from_gh: true
+    target_branch: gh-pages
+    repo: canvascbl/api-docs
+    edge: true
+    on:
+      branch: master

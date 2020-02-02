@@ -1,0 +1,1252 @@
+{
+  "user_profile": {
+    "avatar_url": "https://canvas.instructure.com/images/messages/avatar-50.png",
+    "bio": null,
+    "calendar": {
+      "ics": "https://canvas.instructure.com/feeds/calendars/user_whatevertheidis.ics"
+    },
+    "effective_locale": "en",
+    "id": 1,
+    "integration_id": null,
+    "locale": null,
+    "login_id": "test@example.com",
+    "lti_user_id": "ed25bc4longstringhuh5b792ikrwow674375a",
+    "name": "Example User",
+    "primary_email": "test@example.com",
+    "short_name": "Example User",
+    "sortable_name": "User, Example",
+    "time_zone": "America/Los_Angeles",
+    "title": null
+  },
+  "observees": [
+    {
+      "created_at": "2019-05-16T15:47:38-07:00",
+      "id": 2,
+      "name": "Example Child",
+      "observation_link_root_account_ids": [
+        1
+      ],
+      "short_name": "Example Child",
+      "sortable_name": "Child, Example"
+    },
+    {
+      "created_at": "2019-05-16T15:46:30-07:00",
+      "id": 3,
+      "name": "Another Kiddo",
+      "observation_link_root_account_ids": [
+        1
+      ],
+      "short_name": "Another Kiddo",
+      "sortable_name": "Kiddo, Another"
+    },
+    {
+      "created_at": "2019-05-16T15:47:20-07:00",
+      "id": 4,
+      "name": "Xavier Amanda",
+      "observation_link_root_account_ids": [
+        1
+      ],
+      "short_name": "Xavier Amanda",
+      "sortable_name": "Amanda, Xavier"
+    }
+  ],
+  "courses": [
+    {
+      "account_id": 41,
+      "apply_assignment_group_weights": false,
+      "blueprint": false,
+      "calendar": {
+        "ics": "https://canvas.instructure.com/feeds/calendars/course_tp7ihFuDOa2co5Kjl6ncT4jzxS1GfcP6G3jpHxzt.ics"
+      },
+      "course_code": "Biology - S2 - Martinez",
+      "created_at": "2020-01-15T01:20:47Z",
+      "default_view": "modules",
+      "end_at": "",
+      "enrollment_term_id": 11,
+      "enrollments": [
+        {
+          "associated_user_id": 3,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 2,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 4,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        }
+      ],
+      "grade_passback_setting": null,
+      "grading_standard_id": 0,
+      "hide_final_grades": true,
+      "id": 1,
+      "is_public": false,
+      "is_public_to_auth_users": false,
+      "license": "private",
+      "locale": "",
+      "name": "Biology - S2 - Martinez",
+      "overridden_course_visibility": "",
+      "public_syllabus": false,
+      "public_syllabus_to_auth": false,
+      "restrict_enrollments_to_course_dates": false,
+      "root_account_id": 1,
+      "start_at": "2020-01-21T17:26:00Z",
+      "storage_quota_mb": 500,
+      "time_zone": "America/Los_Angeles",
+      "uuid": "thisisnormallyunique",
+      "workflow_state": "available"
+    },
+    {
+      "account_id": 41,
+      "apply_assignment_group_weights": false,
+      "blueprint": false,
+      "calendar": {
+        "ics": "https://canvas.instructure.com/feeds/calendars/course_LlB7HZxX1TEVNiyNEPlLk85CZzTnpnjtqT1zi8Kp.ics"
+      },
+      "course_code": "Calculus - S2 - Smith",
+      "created_at": "2020-01-15T01:20:48Z",
+      "default_view": "modules",
+      "end_at": "",
+      "enrollment_term_id": 11,
+      "enrollments": [
+        {
+          "associated_user_id": 3,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 2,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        }
+      ],
+      "grade_passback_setting": null,
+      "grading_standard_id": 0,
+      "hide_final_grades": false,
+      "id": 2,
+      "is_public": false,
+      "is_public_to_auth_users": false,
+      "license": "",
+      "locale": "",
+      "name": "Calculus - S2 - Smith",
+      "overridden_course_visibility": "",
+      "public_syllabus": false,
+      "public_syllabus_to_auth": false,
+      "restrict_enrollments_to_course_dates": false,
+      "root_account_id": 1,
+      "start_at": "2020-01-20T22:05:52Z",
+      "storage_quota_mb": 500,
+      "time_zone": "America/Los_Angeles",
+      "uuid": "thisisnormallyunique",
+      "workflow_state": "available"
+    },
+    {
+      "account_id": 41,
+      "apply_assignment_group_weights": false,
+      "blueprint": false,
+      "calendar": {
+        "ics": "https://canvas.instructure.com/feeds/calendars/course_GwFwGdjbxWPT8iHhC5vjLe9IwwQv5Zwxg7EH0Rkh.ics"
+      },
+      "course_code": "Computer Science - S2 - Coleman",
+      "created_at": "2020-01-15T01:20:46Z",
+      "default_view": "feed",
+      "end_at": "",
+      "enrollment_term_id": 11,
+      "enrollments": [
+        {
+          "associated_user_id": 4,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 2,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        }
+      ],
+      "grade_passback_setting": null,
+      "grading_standard_id": 41,
+      "hide_final_grades": true,
+      "id": 23,
+      "is_public": false,
+      "is_public_to_auth_users": false,
+      "license": "private",
+      "locale": "",
+      "name": "Computer Science - S2 - Coleman",
+      "overridden_course_visibility": "",
+      "public_syllabus": false,
+      "public_syllabus_to_auth": false,
+      "restrict_enrollments_to_course_dates": false,
+      "root_account_id": 1,
+      "start_at": "2020-01-20T17:50:40Z",
+      "storage_quota_mb": 500,
+      "time_zone": "America/Los_Angeles",
+      "uuid": "thisisnormallyunique",
+      "workflow_state": "available"
+    },
+    {
+      "account_id": 41,
+      "apply_assignment_group_weights": false,
+      "blueprint": false,
+      "calendar": {
+        "ics": "https://canvas.instructure.com/feeds/calendars/course_gRiw1v9MebujoD5r2VZJczVV5iUbs9ya03lOuuPW.ics"
+      },
+      "course_code": "English 3 - S2 - Lee",
+      "created_at": "2020-01-15T01:20:47Z",
+      "default_view": "wiki",
+      "end_at": "",
+      "enrollment_term_id": 11,
+      "enrollments": [
+        {
+          "associated_user_id": 3,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 2,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 4,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        }
+      ],
+      "grade_passback_setting": null,
+      "grading_standard_id": 0,
+      "hide_final_grades": true,
+      "id": 4,
+      "is_public": false,
+      "is_public_to_auth_users": false,
+      "license": "private",
+      "locale": "",
+      "name": "English 3 - S2 - Lee",
+      "overridden_course_visibility": "",
+      "public_syllabus": false,
+      "public_syllabus_to_auth": false,
+      "restrict_enrollments_to_course_dates": false,
+      "root_account_id": 1,
+      "start_at": "2020-01-20T05:19:00Z",
+      "storage_quota_mb": 500,
+      "time_zone": "America/Los_Angeles",
+      "uuid": "thisisnormallyunique",
+      "workflow_state": "available"
+    },
+    {
+      "account_id": 41,
+      "apply_assignment_group_weights": false,
+      "blueprint": false,
+      "calendar": {
+        "ics": "https://canvas.instructure.com/feeds/calendars/course_8se3eVJ6qTugsG1wyIMroPhofQpXRq0g29sw4HqW.ics"
+      },
+      "course_code": "Pre-Calculus - S2 - Steward",
+      "created_at": "2020-01-15T01:20:49Z",
+      "default_view": "syllabus",
+      "end_at": "",
+      "enrollment_term_id": 11,
+      "enrollments": [
+        {
+          "associated_user_id": 4,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        }
+      ],
+      "grade_passback_setting": null,
+      "grading_standard_id": 0,
+      "hide_final_grades": true,
+      "id": 5,
+      "is_public": false,
+      "is_public_to_auth_users": false,
+      "license": "private",
+      "locale": "",
+      "name": "Pre-Calculus - S2 - Steward",
+      "overridden_course_visibility": "",
+      "public_syllabus": false,
+      "public_syllabus_to_auth": false,
+      "restrict_enrollments_to_course_dates": false,
+      "root_account_id": 1,
+      "start_at": "2020-01-21T18:24:00Z",
+      "storage_quota_mb": 500,
+      "time_zone": "America/Los_Angeles",
+      "uuid": "thisisnormallyunique",
+      "workflow_state": "available"
+    },
+    {
+      "account_id": 41,
+      "apply_assignment_group_weights": false,
+      "blueprint": false,
+      "calendar": {
+        "ics": "https://canvas.instructure.com/feeds/calendars/course_IdYTjutznUF1ceEp6BHe45vu4IZkKfJFct4vFXqm.ics"
+      },
+      "course_code": "World History - S2 - Brown",
+      "created_at": "2020-01-15T01:20:48Z",
+      "default_view": "wiki",
+      "end_at": "",
+      "enrollment_term_id": 11,
+      "enrollments": [
+        {
+          "associated_user_id": 2,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 3,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        },
+        {
+          "associated_user_id": 4,
+          "enrollment_state": "active",
+          "limit_privileges_to_course_section": false,
+          "role": "ObserverEnrollment",
+          "role_id": 7,
+          "type": "observer",
+          "user_id": 1
+        }
+      ],
+      "grade_passback_setting": null,
+      "grading_standard_id": 41,
+      "hide_final_grades": true,
+      "id": 6,
+      "is_public": false,
+      "is_public_to_auth_users": false,
+      "license": "private",
+      "locale": "en",
+      "name": "World History - S2 - Brown",
+      "overridden_course_visibility": "",
+      "public_syllabus": false,
+      "public_syllabus_to_auth": false,
+      "restrict_enrollments_to_course_dates": true,
+      "root_account_id": 1,
+      "start_at": "2020-01-22T18:12:43Z",
+      "storage_quota_mb": 500,
+      "time_zone": "America/Los_Angeles",
+      "uuid": "thisisnormallyunique",
+      "workflow_state": "available"
+    }
+  ],
+  "outcome_results": {
+    "23": {
+      "4": {
+        "3650": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 159282,
+            "links": {
+              "alignment": "assignment_5411",
+              "assignment": "assignment_5411",
+              "learning_outcome": "3650",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-28T19:54:34Z"
+          }
+        ],
+        "3651": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155098,
+            "links": {
+              "alignment": "assignment_5114",
+              "assignment": "assignment_5114",
+              "learning_outcome": "3651",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-21T20:08:18Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155340,
+            "links": {
+              "alignment": "assignment_5116",
+              "assignment": "assignment_5116",
+              "learning_outcome": "3651",
+              "user": "4"
+            },
+            "mastery": false,
+            "percent": 0.25,
+            "possible": 4,
+            "score": 1,
+            "submitted_or_assessed_at": "2020-01-22T21:57:21Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 1519,
+            "links": {
+              "alignment": "assignment_5115",
+              "assignment": "assignment_5115",
+              "learning_outcome": "3651",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-21T20:05:54Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155826,
+            "links": {
+              "alignment": "assignment_5261",
+              "assignment": "assignment_5261",
+              "learning_outcome": "3651",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 0.75,
+            "possible": 4,
+            "score": 3,
+            "submitted_or_assessed_at": "2020-01-23T18:19:31Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 159281,
+            "links": {
+              "alignment": "assignment_5411",
+              "assignment": "assignment_5411",
+              "learning_outcome": "3651",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-28T19:54:34Z"
+          }
+        ],
+        "3664": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155827,
+            "links": {
+              "alignment": "assignment_5261",
+              "assignment": "assignment_5261",
+              "learning_outcome": "3664",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 0.75,
+            "possible": 4,
+            "score": 3,
+            "submitted_or_assessed_at": "2020-01-23T18:19:31Z"
+          }
+        ],
+        "3867": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155099,
+            "links": {
+              "alignment": "assignment_5114",
+              "assignment": "assignment_5114",
+              "learning_outcome": "3867",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-21T20:08:18Z"
+          }
+        ]
+      },
+      "2": {
+        "3650": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 159220,
+            "links": {
+              "alignment": "assignment_5411",
+              "assignment": "assignment_5411",
+              "learning_outcome": "3650",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-28T19:54:14Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 161565,
+            "links": {
+              "alignment": "assignment_5425",
+              "assignment": "assignment_5425",
+              "learning_outcome": "3650",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-29T19:25:19Z"
+          }
+        ],
+        "3651": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155048,
+            "links": {
+              "alignment": "assignment_5114",
+              "assignment": "assignment_5114",
+              "learning_outcome": "3651",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-21T20:03:25Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155114,
+            "links": {
+              "alignment": "assignment_5115",
+              "assignment": "assignment_5115",
+              "learning_outcome": "3651",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-21T20:01:34Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155265,
+            "links": {
+              "alignment": "assignment_5116",
+              "assignment": "assignment_5116",
+              "learning_outcome": "3651",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 0.75,
+            "possible": 4,
+            "score": 3,
+            "submitted_or_assessed_at": "2020-01-22T19:16:28Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155780,
+            "links": {
+              "alignment": "assignment_5261",
+              "assignment": "assignment_5261",
+              "learning_outcome": "3651",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-23T18:16:27Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 159219,
+            "links": {
+              "alignment": "assignment_5411",
+              "assignment": "assignment_5411",
+              "learning_outcome": "3651",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-28T19:54:14Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 159333,
+            "links": {
+              "alignment": "assignment_5383",
+              "assignment": "assignment_5383",
+              "learning_outcome": "3651",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-27T20:06:59Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 161566,
+            "links": {
+              "alignment": "assignment_5425",
+              "assignment": "assignment_5425",
+              "learning_outcome": "3651",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-29T19:25:19Z"
+          }
+        ],
+        "3664": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155781,
+            "links": {
+              "alignment": "assignment_5261",
+              "assignment": "assignment_5261",
+              "learning_outcome": "3664",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-23T18:16:27Z"
+          }
+        ],
+        "3867": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 155049,
+            "links": {
+              "alignment": "assignment_5114",
+              "assignment": "assignment_5114",
+              "learning_outcome": "3867",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 0.75,
+            "possible": 4,
+            "score": 3,
+            "submitted_or_assessed_at": "2020-01-21T20:03:25Z"
+          }
+        ],
+        "3899": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 161567,
+            "links": {
+              "alignment": "assignment_5425",
+              "assignment": "assignment_5425",
+              "learning_outcome": "3899",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-29T19:25:19Z"
+          }
+        ],
+        "3900": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 161568,
+            "links": {
+              "alignment": "assignment_5425",
+              "assignment": "assignment_5425",
+              "learning_outcome": "3900",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-29T19:25:19Z"
+          }
+        ]
+      }
+    },
+    "1": {
+      "3": {
+        "3903": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 156620,
+            "links": {
+              "alignment": "assignment_5297",
+              "assignment": "assignment_5297",
+              "learning_outcome": "3903",
+              "user": "3"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T22:24:37Z"
+          }
+        ]
+      },
+      "4": {
+        "3903": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 156641,
+            "links": {
+              "alignment": "assignment_5297",
+              "assignment": "assignment_5297",
+              "learning_outcome": "3903",
+              "user": "4"
+            },
+            "mastery": false,
+            "percent": 0.5,
+            "possible": 4,
+            "score": 2,
+            "submitted_or_assessed_at": "2020-01-24T22:33:57Z"
+          }
+        ]
+      },
+      "2": {
+        "3903": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 156511,
+            "links": {
+              "alignment": "assignment_5297",
+              "assignment": "assignment_5297",
+              "learning_outcome": "3903",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T21:40:32Z"
+          }
+        ]
+      }
+    },
+    "4": {},
+    "2": {},
+    "6": {
+      "3": {
+        "3847": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 160344,
+            "links": {
+              "alignment": "assignment_5023",
+              "assignment": "assignment_5023",
+              "learning_outcome": "3847",
+              "user": "3"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-28T03:22:01Z"
+          }
+        ],
+        "3848": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 157242,
+            "links": {
+              "alignment": "assignment_5064",
+              "assignment": "assignment_5064",
+              "learning_outcome": "3848",
+              "user": "3"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T20:04:58Z"
+          }
+        ],
+        "3849": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 157243,
+            "links": {
+              "alignment": "assignment_5064",
+              "assignment": "assignment_5064",
+              "learning_outcome": "3849",
+              "user": "3"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T20:04:58Z"
+          }
+        ]
+      },
+      "4": {
+        "3847": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 160442,
+            "links": {
+              "alignment": "assignment_5023",
+              "assignment": "assignment_5023",
+              "learning_outcome": "3847",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-27T18:03:44Z"
+          }
+        ],
+        "3848": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 157276,
+            "links": {
+              "alignment": "assignment_5064",
+              "assignment": "assignment_5064",
+              "learning_outcome": "3848",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T19:03:23Z"
+          }
+        ],
+        "3849": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 157277,
+            "links": {
+              "alignment": "assignment_5064",
+              "assignment": "assignment_5064",
+              "learning_outcome": "3849",
+              "user": "4"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T19:03:23Z"
+          }
+        ]
+      },
+      "2": {
+        "3847": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 156946,
+            "links": {
+              "alignment": "assignment_5023",
+              "assignment": "assignment_5023",
+              "learning_outcome": "3847",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T22:22:53Z"
+          }
+        ],
+        "3848": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 156969,
+            "links": {
+              "alignment": "assignment_5064",
+              "assignment": "assignment_5064",
+              "learning_outcome": "3848",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 0.875,
+            "possible": 4,
+            "score": 3.5,
+            "submitted_or_assessed_at": "2020-01-24T19:01:49Z"
+          },
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 162272,
+            "links": {
+              "alignment": "assignment_5048",
+              "assignment": "assignment_5048",
+              "learning_outcome": "3848",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-28T23:26:03Z"
+          }
+        ],
+        "3849": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 156970,
+            "links": {
+              "alignment": "assignment_5064",
+              "assignment": "assignment_5064",
+              "learning_outcome": "3849",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-24T19:01:49Z"
+          }
+        ],
+        "3852": [
+          {
+            "hidden": false,
+            "hide_points": false,
+            "id": 162273,
+            "links": {
+              "alignment": "assignment_5048",
+              "assignment": "assignment_5048",
+              "learning_outcome": "3852",
+              "user": "2"
+            },
+            "mastery": true,
+            "percent": 1,
+            "possible": 4,
+            "score": 4,
+            "submitted_or_assessed_at": "2020-01-28T23:26:03Z"
+          }
+        ]
+      }
+    },
+    "5": {}
+  },
+  "detailed_grades": {
+    "3": {
+      "1": {
+        "grade": {
+          "grade": "A",
+          "rank": 6,
+          "most_above": 3.3,
+          "all_above": 3
+        },
+        "averages": {
+          "3903": {
+            "did_drop_worst_score": false,
+            "average": 4
+          }
+        }
+      },
+      "4": {
+        "grade": {
+          "grade": "N/A",
+          "rank": -1,
+          "most_above": 0,
+          "all_above": 0
+        },
+        "averages": null
+      },
+      "2": {
+        "grade": {
+          "grade": "N/A",
+          "rank": -1,
+          "most_above": 0,
+          "all_above": 0
+        },
+        "averages": null
+      },
+      "6": {
+        "grade": {
+          "grade": "A",
+          "rank": 6,
+          "most_above": 3.3,
+          "all_above": 3
+        },
+        "averages": {
+          "3847": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3848": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3849": {
+            "did_drop_worst_score": false,
+            "average": 4
+          }
+        }
+      }
+    },
+    "4": {
+      "23": {
+        "grade": {
+          "grade": "A",
+          "rank": 6,
+          "most_above": 3.3,
+          "all_above": 3
+        },
+        "averages": {
+          "3650": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3651": {
+            "did_drop_worst_score": true,
+            "average": 3.75
+          },
+          "3664": {
+            "did_drop_worst_score": false,
+            "average": 3
+          },
+          "3867": {
+            "did_drop_worst_score": false,
+            "average": 4
+          }
+        }
+      },
+      "1": {
+        "grade": {
+          "grade": "I",
+          "rank": 0,
+          "most_above": 0,
+          "all_above": 0
+        },
+        "averages": {
+          "3903": {
+            "did_drop_worst_score": false,
+            "average": 2
+          }
+        }
+      },
+      "4": {
+        "grade": {
+          "grade": "N/A",
+          "rank": -1,
+          "most_above": 0,
+          "all_above": 0
+        },
+        "averages": null
+      },
+      "6": {
+        "grade": {
+          "grade": "A",
+          "rank": 6,
+          "most_above": 3.3,
+          "all_above": 3
+        },
+        "averages": {
+          "3847": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3848": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3849": {
+            "did_drop_worst_score": false,
+            "average": 4
+          }
+        }
+      },
+      "5": {
+        "grade": {
+          "grade": "N/A",
+          "rank": -1,
+          "most_above": 0,
+          "all_above": 0
+        },
+        "averages": null
+      }
+    },
+    "2": {
+      "23": {
+        "grade": {
+          "grade": "A",
+          "rank": 6,
+          "most_above": 3.3,
+          "all_above": 3
+        },
+        "averages": {
+          "3650": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3651": {
+            "did_drop_worst_score": true,
+            "average": 4
+          },
+          "3664": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3867": {
+            "did_drop_worst_score": false,
+            "average": 3
+          },
+          "3899": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3900": {
+            "did_drop_worst_score": false,
+            "average": 4
+          }
+        }
+      },
+      "1": {
+        "grade": {
+          "grade": "A",
+          "rank": 6,
+          "most_above": 3.3,
+          "all_above": 3
+        },
+        "averages": {
+          "3903": {
+            "did_drop_worst_score": false,
+            "average": 4
+          }
+        }
+      },
+      "4": {
+        "grade": {
+          "grade": "N/A",
+          "rank": -1,
+          "most_above": 0,
+          "all_above": 0
+        },
+        "averages": null
+      },
+      "2": {
+        "grade": {
+          "grade": "N/A",
+          "rank": -1,
+          "most_above": 0,
+          "all_above": 0
+        },
+        "averages": null
+      },
+      "6": {
+        "grade": {
+          "grade": "A",
+          "rank": 6,
+          "most_above": 3.3,
+          "all_above": 3
+        },
+        "averages": {
+          "3847": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3848": {
+            "did_drop_worst_score": true,
+            "average": 4
+          },
+          "3849": {
+            "did_drop_worst_score": false,
+            "average": 4
+          },
+          "3852": {
+            "did_drop_worst_score": false,
+            "average": 4
+          }
+        }
+      }
+    }
+  }
+}
