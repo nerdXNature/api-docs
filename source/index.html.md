@@ -25,6 +25,12 @@ CanvasCBL has no official bindings at this time-- so you'll need to use your HTT
 
 Currently, we offer API examples in JavaScript using [axios](https://github.com/axios/axios) and with cURL for testing.
 
+## Contributing
+
+See something wrong? Please help fix it!
+
+The repository that builds these docs is open-source at [https://github.com/canvascbl/api-docs](https://github.com/canvascbl/api-docs).
+
 ## Base URL
 
 > Our base URL (a 404!)
