@@ -6,7 +6,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='https://docs.google.com/forms/d/1mQx-QK94kjOMi1-R0CcEHvOtm-NsnbD7EyDHo667RWc/edit'>Request a Developer Key</a>
+  - <a href='https://go.canvascbl.com/dkapp?utm_source=api_docs'>Request a Developer Key</a>
+  - <a href='https:/go.canvascbl.com/dkagreement?utm_source=api_docs'>Developer Key Agreement</a>
   - <p>—</p>
   - <a href='https://canvascbl.com/'>CanvasCBL</a>
 
@@ -30,6 +31,8 @@ Currently, we offer API examples in JavaScript using [axios](https://github.com/
 See something wrong? Please help fix it!
 
 The repository that builds these docs is open-source at [https://github.com/canvascbl/api-docs](https://github.com/canvascbl/api-docs).
+
+This version of the docs was built from [commit <%= commit false %>](https://github.com/canvascbl/api-docs/commit/<%= commit true %>).
 
 ## Base URL
 
@@ -69,7 +72,7 @@ To make this easier, you can use a JavaScript library like [moment.js](https://m
 
 # Authentication
 
-The CanvasCBLs API uses OAuth2, a standard protocol for API authentication. To get the required Developer Key (your Client ID and Client Secret), follow the link below the table of contents on the left.
+The CanvasCBL API uses OAuth2, a standard protocol for API authentication. To get the required Developer Key (your Client ID and Client Secret), follow the link below the table of contents on the left.
 
 The access token should go in the HTTP `Authorization` header like this:
 
@@ -85,20 +88,20 @@ Replace <code>ilovecanvascbl</code> with your access token.
 
 The following OAuth2 scopes are available, although your credentials may not have access to all scopes.
 
-|Name                 |Description                                                                           |
-|---------------------|--------------------------------------------------------------------------------------|
-|user_profile         |Information about the user on Canvas, like their email, name and profile picture.     |
-|observees            |Names and profile pictures of the user's observees (if applicable).                   |
-|courses              |Detailed information about each course that currently has a grade.                    |
-|alignments           |Outcome alignments for a specific class.                                              |
-|assignments          |Detailed information about all assignments for every class you have access to.        |
-|outcomes             |Details about any individual outcome you have access to.                              |
-|grades               |Name of each class and its grade.                                                     |
-|previous_grades      |Grades from the last time the user used CanvasCBL. Only applies to CanvasCBL+ users.  |
-|average_course_grade |The average grade for any course the user is enrolled in.                             |
-|average_outcome_score|The average score for any outcome in any course the user is enrolled in.              |
-|outcome_results      |Specific scores on assignments.                                                       |
-|detailed_grades      |Grades, along with each outcome score and whether the last alignment was dropped.     |
+| Name | Description |
+| ---- | ----------- |
+| user_profile | Information about users on Canvas, like their email, name and profile picture. |
+| observees | Names and profile pictures of observees (if applicable). |
+| courses | Detailed information about each course that currently has a grade. |
+| alignments | Outcome alignments for a specific class. |
+| assignments | Detailed information about all assignments for every class the user has access to. |
+| outcomes | Details about any individual outcome the user has access to. |
+| grades | Name of each class and its grade. |
+| previous_grades | Grades from the last time the user used CanvasCBL. Only applies to CanvasCBL+ users. |
+| average_course_grade | The average grade for any course the user is enrolled in. |
+| average_outcome_score | The average score for any outcome in any course the user is enrolled in. |
+| outcome_results | Specific scores on assignments. |
+| detailed_grades | Grades, along with each outcome score and whether the last alignment was dropped. |
 
 ## Request
 
@@ -115,8 +118,8 @@ The OAuth2 request is a URL that the user **should be sent to in their browser**
 | `response_type` | `code` | **Required.** Must be `code`. |
 | `client_id` | `d262d1d3-d969-4d48-ac1e-cfceec88b5c9` | **Required.** Your Client ID. |
 | `scope` | `user_profile observees grades` | **Required.** Space-separated list of [scopes](#scopes) you would like access to. |
-| `redirect_uri` | `https://dcraft.com/oauth2/response` | **Required.** The URI where the user will be redirected after the authorization. Must match the Redirect URI on your OAuth2 Credentials. |
-| `purpose` | `dCraft` | Helps the user identify what this token is for. |
+| `redirect_uri` | `https://dcraft.com/oauth2/response` | **Required.** The URI where the user will be redirected after the authorization. Must match one of the Redirect URIs on your OAuth2 Credentials. |
+| `purpose` | `dCraft` | Helps the user identify what this token is for. Note that it will already say your app's name, so try to be more specific. Optional field, though. |
 
 ### Description
 
@@ -128,7 +131,8 @@ Prepare this URL, then send the user to it. **Do not use anything (ex. URL short
 <%= api_base_url %>/api/oauth2/auth?response_type=code&client_id=d262d1d3-d969-4d48-ac1e-cfceec88b5c9&scope=user_profile%20observees%20grades&redirect_uri=https%3A%2F%2Fdcraft.com%2Foauth2%2Fresponse&purpose=dCraft
 ```
 
-The user will now be forwarded to an opaque URL for authorization. If they accept or deny your request, they will be redirected to the specified redirect URI.
+The user will now be forwarded to an opaque URL for authorization. 
+If they accept or deny your request, they will be redirected to the redirect URI in the original request.
 
 ### After User Input
 
@@ -243,7 +247,7 @@ const refreshTokenRequest = await axios({
 }
 ```
 
-You can the token endpoint either to refresh an expired access token (access tokens last an hour) or to get a new access and refresh token from a code.
+You can use the token endpoint either to refresh an expired access token (access tokens last an hour) or to get a new access and refresh token from a code.
 
 ### Endpoint
 
@@ -383,7 +387,7 @@ const iterableGrades =
 */
 ```
 
-> Simple grades (no includes[]) response
+> Simple grades (no include[]) response
 
 ```json
 {
@@ -414,8 +418,8 @@ curl \
   -X GET \
   -H "Authorization: ilovecanvascbl" \
   "<%= api_base_url %>/api/v1/grades?\
-includes[]=user_profile\
-&includes[]=observees"
+include[]=user_profile\
+&include[]=observees"
 ```
 
 ```javascript
@@ -443,10 +447,10 @@ curl \
   -X GET \
   -H "Authorization: ilovecanvascbl" \
   "<%= api_base_url %>/api/v1/grades?\
-includes[]=user_profile\
-&includes[]=outcome_results\
-&includes[]=observees\
-&includes[]=courses"
+include[]=user_profile\
+&include[]=outcome_results\
+&include[]=observees\
+&include[]=courses"
 ```
 
 ```javascript
@@ -476,11 +480,11 @@ curl \
   -X GET \
   -H "Authorization: ilovecanvascbl" \
   "<%= api_base_url %>/api/v1/grades?\
-includes[]=user_profile\
-&includes[]=outcome_results\
-&includes[]=observees\
-&includes[]=courses\
-&includes[]=detailed_grades"
+include[]=user_profile\
+&include[]=outcome_results\
+&include[]=observees\
+&include[]=courses\
+&include[]=detailed_grades"
 ```
 
 ```javascript
@@ -510,14 +514,14 @@ const kitchenSinkRequest = await axios({
 
 ### Scopes/Includes
 
-Grades is a flexible endpoint that can return anything from just a user's class names and their grades to their profile, outcome results, outcome averages, full course and more.
+Grades is a flexible endpoint that can return anything from just a user's class names and their grades to their profile, outcome results, outcome averages, full courses and more.
 
-You tell the grades endpoint what you want by using the `includes[]` query parameter.
+You tell the grades endpoint what you want by using the `include[]` query parameter.
 
-If you do not include any `includes[]` parameters, only *simple grades* will be returned. *Simple grades* just requres the `grades` scope.
+If you do not include any `include[]` parameters, only *simple grades* will be returned. *Simple grades* just requres the `grades` scope.
 However, if you ask for `detailed_grades`, you will not get *simple grades*. It's one or the other.
 
-While the `includes[]` parameter is intended to mirror [OAuth2 Scopes](#scopes), they may differ in the future, so the following table is here for convience.
+While the `include[]` parameter is intended to mirror [OAuth2 Scopes](#scopes), they may differ in the future, so the following table is here for convience.
 
 | Includes Name | Required Scope |
 | ------------- | -------------- |
@@ -534,7 +538,8 @@ Grades is, by far, the most powerful endpoint that the CanvasCBL API offers.
 When using it, though, there are a few things to note:
 
 - It is a slow endpoint. It relies on many responses from Canvas, which can take a while. 
-If you want to set a reasonable timeout for this request, we recommend about 15 seconds. It's normally around 1-5 seconds.
+If you want to set a reasonable timeout for this request, we recommend about 15 seconds.
+Normally, it takes 0.5-5 seconds, but we've seen it as high as 14.
 - It is an expensive endpoint. There is a lot of computation on both sides which is required to make this work.
 - We recommend that you re-fetch grades on every reload of your app.
 - The user's Canvas ID may not appear in grades-- that generally means that the user is an Observer. For information about their Observees, you'll want to request `observees`.
@@ -546,7 +551,7 @@ you can click [here for everything (simple grades)](static/grades_responses/ever
 
 ### Canvas API Bindings
 
-Some of the `includes[]` options return responses that **essentially** mirror Canvas's API.
+Some of the `include[]` options return responses that **essentially** mirror Canvas's API.
 Not all fields will be there, notably large ones like descriptions. You can see what is and isn't included in the [Kitchen Sink response](static/grades_responses/everything.json).
 
 Here's a reference to those:

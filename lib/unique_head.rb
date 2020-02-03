@@ -29,6 +29,16 @@ class UniqueHeadCounter < Middleman::Renderers::MiddlemanRedcarpetHTML
      ENV["API_BASE_URL"] ? ENV["API_BASE_URL"] : "https://api.canvascbl.com"
   end
 
+  # commit returns the commit, full represents whether the full commit should be returned
+  def commit (full = false)
+    c = ENV["TRAVIS_COMMIT"] ? ENV["TRAVIS_COMMIT"] : "n/a"
+    if full
+      return c
+    end
+
+    return c[0,7]
+  end
+
   def preprocess(full_document)
     full_document = super(full_document) if defined?(super)
     full_document = ERB.new(full_document).result(binding)

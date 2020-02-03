@@ -22,7 +22,7 @@ All errors are in JSON. See the example on the right.
 
 ```json
 {
-  "error": "invalid <param name> as <param type, like url or query> param"
+  "error": "<invalid/missing> <param name> as <param type, like url or query> param"
 }
 ```
 
