@@ -26,6 +26,9 @@ CanvasCBL has no official bindings at this time-- so you'll need to use your HTT
 
 Currently, we offer API examples in JavaScript using [axios](https://github.com/axios/axios) and with cURL for testing.
 
+Also, we have a fully built out demo of the entire authorization flow and pulling grades
+written in Node.JS and Express.JS at [https://go.canvascbl.com/api-demo-node](https://go.canvascbl.com/api-demo-node).
+
 ## Contributing
 
 See something wrong? Please help fix it!
@@ -69,6 +72,15 @@ Our base URL is `<%= api_base_url %>/`. That's the starting point for all reques
 All times come back in UTC, whether they are in seconds since epoch or [RFC3339](https://www.ietf.org/rfc/rfc3339.txt). All integer times will be in seconds since epoch, and all string timestamps will be in RFC3339.
 
 To make this easier, you can use a JavaScript library like [moment.js](https://momentjs.com/) in production, or a website like [epochconverter.com](https://epochconverter.com) during development.
+
+## CORS
+
+CORS, or Cross-Origin Resource Sharing, is an internet standard for protecting limited access to internet resources from other webpages.
+You can learn more about CORS [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+
+The CanvasCBL API does not support CORS. For you, this means that, if you want to use the CanvasCBL API and display the result on a webpage,
+you must proxy the request and reponse through a server you control. Check out our [API Demo](https://go.canvascbl.com/api-demo-node) for
+a demo of this.
 
 # Authentication
 
