@@ -7,7 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 toc_footers:
   - <a href='https://go.canvascbl.com/dkapp?utm_source=api_docs'>Request a Developer Key</a>
-  - <a href='https:/go.canvascbl.com/dkagreement?utm_source=api_docs'>Developer Key Agreement</a>
+  - <a href='https://go.canvascbl.com/dkagreement?utm_source=api_docs'>Developer Key Agreement</a>
   - <p>—</p>
   - <a href='https://canvascbl.com/'>CanvasCBL</a>
 

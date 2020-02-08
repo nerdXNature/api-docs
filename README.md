@@ -2,7 +2,7 @@
 
 This repository hosts CanvasCBL's API Docs.
 
-Check them out at [https://api-docs.canvascbl.com](https://api-docs.canvascbl.com)!
+Check them out at [https://go.canvascbl.com/docs](https://go.canvascbl.com/docs)!
 
 ## Contributing
 
