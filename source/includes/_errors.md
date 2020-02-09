@@ -16,6 +16,18 @@ This section discusses Error Handling in the CanvasCBL API.
 
 All errors are in JSON. See the example on the right.
 
+## Session Error
+
+> Session error text
+
+```json
+{
+  "error": "no session string (pass it in via the session_string cookie)"
+}
+```
+
+This means that **you have not passed in an API Key**.
+
 ## Validation Errors
 
 > Validation Error Structure
