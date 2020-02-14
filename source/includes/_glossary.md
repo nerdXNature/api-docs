@@ -28,6 +28,8 @@ Another term for a [Developer Key](#developer-key).
 
 An OAuth2 Grant is a Access/Refresh Token combo. They are linked to a Redirect URI, a number of scopes, and a [Developer Key](#developer-key).
 
+You can see an example grant response in the [Token request documentation](#token).
+
 ## OAuth2 Redirect URI
 
 > Example Redirect URI

@@ -26,7 +26,7 @@ All errors are in JSON. See the example on the right.
 }
 ```
 
-This means that **you have not passed in an API Key**.
+This means that **you have not passed in an Access Token** via the Authorization header. This error won't show up if you pass in an invalid token, just a missing one.
 
 ## Validation Errors
 

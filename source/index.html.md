@@ -284,6 +284,10 @@ Developer Keys (your Client ID and Client Secret) can have an unlimited number o
 This means that, if you want to use the CanvasCBL API concurrently (a completely supported behavior!) you need to be sure that each of your requests don't try to refresh the token at the same time.
 If you do that, you're establishing a [race condition](https://en.wikipedia.org/wiki/Race_condition)-- don't do this!
 
+
+Access tokens expire after an hour. Refresh tokens do not expire, but users may revoke a grant (both the access and refresh token) at any time from their profile page.
+
+
 <aside class="warning">
 This request must be performed from a server where the user can never see the full URL as it includes your Client Secret.
 </aside>
