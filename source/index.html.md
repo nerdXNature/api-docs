@@ -314,11 +314,11 @@ curl \
 
 ```javascript
 await axios({
-	"method": "delete",
-	"url": "<%= api_base_url %>/api/oauth2/token",
-	"headers": {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  "method": "delete",
+  "url": "<%= api_base_url %>/api/oauth2/token",
+  "headers": {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 })
 ```
 
@@ -355,11 +355,11 @@ curl \
 
 ```javascript
 const gradesRequest = await axios({
-	method: "GET",
-	url: "<%= api_base_url %>/api/v1/grades",
-	headers: {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  method: "GET",
+  url: "<%= api_base_url %>/api/v1/grades",
+  headers: {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 });
 
 // if you just care about the 'first' user's grades, you can do something like this:
@@ -440,17 +440,17 @@ include[]=user_profile\
 
 ```javascript
 const gradesRequest = await axios({
-	method: "GET",
+  method: "GET",
   url: "<%= api_base_url %>/api/v1/grades",
   params: {
     includes: [
       'user_profile',
       'observees'
     ]
-  },
-	headers: {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  }
+  headers: {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 });
 ```
 
@@ -471,7 +471,7 @@ include[]=user_profile\
 
 ```javascript
 const kitchenSinkRequest = await axios({
-	method: "GET",
+  method: "GET",
   url: "<%= api_base_url %>/api/v1/grades",
   params: {
     includes: [
@@ -480,10 +480,10 @@ const kitchenSinkRequest = await axios({
       'observees',
       'courses'
     ]
-  },
-	headers: {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  }
+  headers: {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 });
 ```
 
@@ -505,7 +505,7 @@ include[]=user_profile\
 
 ```javascript
 const kitchenSinkRequest = await axios({
-	method: "GET",
+  method: "GET",
   url: "<%= api_base_url %>/api/v1/grades",
   params: {
     includes: [
@@ -515,10 +515,10 @@ const kitchenSinkRequest = await axios({
       'courses',
       'detailed_grades'
     ]
-  },
-	headers: {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  }
+  headers: {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 });
 ```
 
@@ -596,11 +596,11 @@ curl \
 
 ```javascript
 const kitchenSinkRequest = await axios({
-	method: "GET",
+  method: "GET",
   url: "<%= api_base_url %>/api/v1/courses/1/assignments",
-	headers: {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  headers: {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 });
 ```
 
@@ -716,14 +716,14 @@ student_id=1"
 
 ```javascript
 const kitchenSinkRequest = await axios({
-	method: "GET",
+  method: "GET",
   url: "<%= api_base_url %>/api/v1/courses/1/outcome_alignments",
   params: {
     student_id: 1
-  },
-	headers: {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  }
+  headers: {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 });
 ```
 
@@ -781,11 +781,11 @@ curl \
 
 ```javascript
 const kitchenSinkRequest = await axios({
-	method: "GET",
+  method: "GET",
   url: "<%= api_base_url %>/api/v1/outcomes/1",
-	headers: {
-		"Authorization": "Bearer ilovecanvascbl"
-	}
+  headers: {
+    "Authorization": "Bearer ilovecanvascbl"
+  }
 });
 ```
 
