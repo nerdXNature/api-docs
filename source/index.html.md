@@ -447,7 +447,7 @@ const gradesRequest = await axios({
       'user_profile',
       'observees'
     ]
-  }
+  },
 	headers: {
 		"Authorization": "Bearer ilovecanvascbl"
 	}
@@ -480,7 +480,7 @@ const kitchenSinkRequest = await axios({
       'observees',
       'courses'
     ]
-  }
+  },
 	headers: {
 		"Authorization": "Bearer ilovecanvascbl"
 	}
@@ -515,7 +515,7 @@ const kitchenSinkRequest = await axios({
       'courses',
       'detailed_grades'
     ]
-  }
+  },
 	headers: {
 		"Authorization": "Bearer ilovecanvascbl"
 	}
@@ -720,7 +720,7 @@ const kitchenSinkRequest = await axios({
   url: "<%= api_base_url %>/api/v1/courses/1/outcome_alignments",
   params: {
     student_id: 1
-  }
+  },
 	headers: {
 		"Authorization": "Bearer ilovecanvascbl"
 	}
