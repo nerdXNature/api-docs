@@ -1,0 +1,81 @@
+{
+  "user_profile": {
+    "avatar_url": "https://canvas.instructure.com/images/messages/avatar-50.png",
+    "bio": null,
+    "calendar": {
+      "ics": "https://canvas.instructure.com/feeds/calendars/user_whatevertheidis.ics"
+    },
+    "effective_locale": "en",
+    "id": 1,
+    "integration_id": null,
+    "locale": null,
+    "login_id": "test@example.com",
+    "lti_user_id": "ed25bc4longstringhuh5b792ikrwow674375a",
+    "name": "Example User",
+    "primary_email": "test@example.com",
+    "short_name": "Example User",
+    "sortable_name": "User, Example",
+    "time_zone": "America/Los_Angeles",
+    "title": null
+  },
+  "observees": [
+    {
+      "created_at": "2019-05-16T15:47:38-07:00",
+      "id": 2,
+      "name": "Example Child",
+      "observation_link_root_account_ids": [
+        1
+      ],
+      "short_name": "Example Child",
+      "sortable_name": "Child, Example"
+    },
+    {
+      "created_at": "2019-05-16T15:46:30-07:00",
+      "id": 3,
+      "name": "Another Kiddo",
+      "observation_link_root_account_ids": [
+        1
+      ],
+      "short_name": "Another Kiddo",
+      "sortable_name": "Kiddo, Another"
+    },
+    {
+      "created_at": "2019-05-16T15:47:20-07:00",
+      "id": 4,
+      "name": "Xavier Amanda",
+      "observation_link_root_account_ids": [
+        1
+      ],
+      "short_name": "Xavier Amanda",
+      "sortable_name": "Amanda, Xavier"
+    }
+  ],
+  "simple_grades": {
+    "Biology - S2 - Martinez": {
+      "2": "A",
+      "3": "I",
+      "4": "A"
+    },
+    "Calculus - S2 - Smith": {
+      "2": "A",
+      "3": "B"
+    },
+    "Computer Science - S2 - Coleman": {
+      "2": "A-",
+      "4": "B"
+    },
+    "English 3 - S2 - Lee": {
+      "2": "A",
+      "3": "B+",
+      "4": "C"
+    },
+    "Pre-Calculus - S2 - Steward": {
+      "4": "I"
+    },
+    "World History - S2 - Brown": {
+      "2": "C",
+      "3": "A",
+      "4": "B"
+    }
+  }
+}

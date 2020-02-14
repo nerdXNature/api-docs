@@ -1,0 +1,1340 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CanvasCBL API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-a1ce949a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;javascript&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-084cc19a.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+              <a href="#" data-language-name="javascript">javascript</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#contributing" class="toc-h2 toc-link" data-title="Contributing">Contributing</a>
+                  </li>
+                  <li>
+                    <a href="#base-url" class="toc-h2 toc-link" data-title="Base URL">Base URL</a>
+                  </li>
+                  <li>
+                    <a href="#times" class="toc-h2 toc-link" data-title="Times">Times</a>
+                  </li>
+                  <li>
+                    <a href="#cors" class="toc-h2 toc-link" data-title="CORS">CORS</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#scopes" class="toc-h2 toc-link" data-title="Scopes">Scopes</a>
+                  </li>
+                  <li>
+                    <a href="#request" class="toc-h2 toc-link" data-title="Request">Request</a>
+                  </li>
+                  <li>
+                    <a href="#token" class="toc-h2 toc-link" data-title="Token">Token</a>
+                  </li>
+                  <li>
+                    <a href="#logout" class="toc-h2 toc-link" data-title="Logout">Logout</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#grades" class="toc-h1 toc-link" data-title="Grades">Grades</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-grades" class="toc-h2 toc-link" data-title="Get Grades">Get Grades</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#courses" class="toc-h1 toc-link" data-title="Courses">Courses</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-assignments" class="toc-h2 toc-link" data-title="Get Assignments">Get Assignments</a>
+                  </li>
+                  <li>
+                    <a href="#get-outcome-alignments" class="toc-h2 toc-link" data-title="Get Outcome Alignments">Get Outcome Alignments</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#outcomes" class="toc-h1 toc-link" data-title="Outcomes">Outcomes</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-an-outcome" class="toc-h2 toc-link" data-title="Get an Outcome">Get an Outcome</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#session-error" class="toc-h2 toc-link" data-title="Session Error">Session Error</a>
+                  </li>
+                  <li>
+                    <a href="#validation-errors" class="toc-h2 toc-link" data-title="Validation Errors">Validation Errors</a>
+                  </li>
+                  <li>
+                    <a href="#oauth2-errors" class="toc-h2 toc-link" data-title="OAuth2 Errors">OAuth2 Errors</a>
+                  </li>
+                  <li>
+                    <a href="#grades-errors" class="toc-h2 toc-link" data-title="Grades Errors">Grades Errors</a>
+                  </li>
+                  <li>
+                    <a href="#errors-from-canvas" class="toc-h2 toc-link" data-title="Errors From Canvas">Errors From Canvas</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#glossary" class="toc-h1 toc-link" data-title="Glossary">Glossary</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#developer-key" class="toc-h2 toc-link" data-title="Developer Key">Developer Key</a>
+                  </li>
+                  <li>
+                    <a href="#oauth2-credential" class="toc-h2 toc-link" data-title="OAuth2 Credential">OAuth2 Credential</a>
+                  </li>
+                  <li>
+                    <a href="#oauth2-grant" class="toc-h2 toc-link" data-title="OAuth2 Grant">OAuth2 Grant</a>
+                  </li>
+                  <li>
+                    <a href="#oauth2-redirect-uri" class="toc-h2 toc-link" data-title="OAuth2 Redirect URI">OAuth2 Redirect URI</a>
+                  </li>
+                  <li>
+                    <a href="#access-token" class="toc-h2 toc-link" data-title="Access Token">Access Token</a>
+                  </li>
+                  <li>
+                    <a href="#refresh-token" class="toc-h2 toc-link" data-title="Refresh Token">Refresh Token</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://go.canvascbl.com/dkapp?utm_source=api_docs'>Request a Developer Key</a></li>
+            <li><a href='https://go.canvascbl.com/dkagreement?utm_source=api_docs'>Developer Key Agreement</a></li>
+            <li><p>—</p></li>
+            <li><a href='https://canvascbl.com/'>CanvasCBL</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Welcome to the CanvasCBL API! You can use the CanvasCBL API to get CBL Grades, along with information about outcomes, courses, users and more.</p>
+
+<p>CanvasCBL has no official bindings at this time-- so you&#39;ll need to use your HTTP client of choice (hopefully, in your language of choice!) to make requests.</p>
+
+<p>Currently, we offer API examples in JavaScript using <a href="https://github.com/axios/axios">axios</a> and with cURL for testing.</p>
+
+<p>Also, we have a fully built out demo of the entire authorization flow and pulling grades
+written in Node.JS and Express.JS at <a href="https://go.canvascbl.com/api-demo-node">https://go.canvascbl.com/api-demo-node</a>.</p>
+<h2 id='contributing'>Contributing</h2>
+<p>See something wrong? Please help fix it!</p>
+
+<p>The repository that builds these docs is open-source at <a href="https://github.com/canvascbl/api-docs">https://github.com/canvascbl/api-docs</a>.</p>
+
+<p>This version of the docs was built from <a href="https://github.com/canvascbl/api-docs/commit/c5d58ef0838b4748221828c63fc521ea9b34254d">commit c5d58ef</a>.</p>
+<h2 id='base-url'>Base URL</h2>
+<blockquote>
+<p>Our base URL (a 404!)</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl https://api.canvascbl.com/
+
+<span class="c"># 404 page not found</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">baseUrlRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">(</span><span class="s1">'https://api.canvascbl.com/'</span><span class="p">)</span>
+
+<span class="c1">// 404 page not found</span>
+</code></pre>
+<p>Our base URL is <code>https://api.canvascbl.com/</code>. That&#39;s the starting point for all requests. Note that HTTP requests will be forwarded to HTTPS, but you&#39;ve already sent the access token in plain text over the internet. Please use HTTPS!</p>
+<h2 id='times'>Times</h2>
+<blockquote>
+<p>Seconds since epoch</p>
+</blockquote>
+<pre class="highlight plaintext"><code>1580589676
+</code></pre>
+<blockquote>
+<p>RFC3339</p>
+</blockquote>
+<pre class="highlight plaintext"><code>2020-02-01T21:35:03Z
+</code></pre>
+<p>All times come back in UTC, whether they are in seconds since epoch or <a href="https://www.ietf.org/rfc/rfc3339.txt">RFC3339</a>. All integer times will be in seconds since epoch, and all string timestamps will be in RFC3339.</p>
+
+<p>To make this easier, you can use a JavaScript library like <a href="https://momentjs.com/">moment.js</a> in production, or a website like <a href="https://epochconverter.com">epochconverter.com</a> during development.</p>
+<h2 id='cors'>CORS</h2>
+<p>CORS, or Cross-Origin Resource Sharing, is an internet standard for protecting limited access to internet resources from other webpages.
+You can learn more about CORS <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">here</a>.</p>
+
+<p>The CanvasCBL API does not support CORS. For you, this means that, if you want to use the CanvasCBL API and display the result on a webpage,
+you must proxy the request and reponse through a server you control. Check out our <a href="https://go.canvascbl.com/api-demo-node">API Demo</a> for
+a demo of this.</p>
+<h1 id='authentication'>Authentication</h1>
+<p>The CanvasCBL API uses OAuth2, a standard protocol for API authentication. To get the required Developer Key (your Client ID and Client Secret), follow the link below the table of contents on the left.</p>
+
+<p>The access token should go in the HTTP <code>Authorization</code> header like this:</p>
+
+<p><code>Authorization: Bearer ilovecanvascbl</code></p>
+
+<p>Make sure you include the &quot;Bearer &quot; (note that space) in the header-- otherwise it may not work.</p>
+
+<aside class="notice">
+Replace <code>ilovecanvascbl</code> with your access token.
+</aside>
+<h2 id='scopes'>Scopes</h2>
+<p>The following OAuth2 scopes are available, although your credentials may not have access to all scopes.</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_profile</td>
+<td>Information about users on Canvas, like their email, name and profile picture.</td>
+</tr>
+<tr>
+<td>observees</td>
+<td>Names and profile pictures of observees (if applicable).</td>
+</tr>
+<tr>
+<td>courses</td>
+<td>Detailed information about each course that currently has a grade.</td>
+</tr>
+<tr>
+<td>alignments</td>
+<td>Outcome alignments for a specific class.</td>
+</tr>
+<tr>
+<td>assignments</td>
+<td>Detailed information about all assignments for every class the user has access to.</td>
+</tr>
+<tr>
+<td>outcomes</td>
+<td>Details about any individual outcome the user has access to.</td>
+</tr>
+<tr>
+<td>grades</td>
+<td>Name of each class and its grade.</td>
+</tr>
+<tr>
+<td>previous_grades</td>
+<td>Grades from the last time the user used CanvasCBL. Only applies to CanvasCBL+ users.</td>
+</tr>
+<tr>
+<td>average_course_grade</td>
+<td>The average grade for any course the user is enrolled in.</td>
+</tr>
+<tr>
+<td>average_outcome_score</td>
+<td>The average score for any outcome in any course the user is enrolled in.</td>
+</tr>
+<tr>
+<td>outcome_results</td>
+<td>Specific scores on assignments.</td>
+</tr>
+<tr>
+<td>detailed_grades</td>
+<td>Grades, along with each outcome score and whether the last alignment was dropped.</td>
+</tr>
+</tbody></table>
+<h2 id='request'>Request</h2>
+<p>The OAuth2 request is a URL that the user <strong>should be sent to in their browser</strong>.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<p><code>GET /api/oauth2/auth</code></p>
+<h3 id='query-string'>Query String</h3>
+<table><thead>
+<tr>
+<th>Param</th>
+<th>Example Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>response_type</code></td>
+<td><code>code</code></td>
+<td><strong>Required.</strong> Must be <code>code</code>.</td>
+</tr>
+<tr>
+<td><code>client_id</code></td>
+<td><code>d262d1d3-d969-4d48-ac1e-cfceec88b5c9</code></td>
+<td><strong>Required.</strong> Your Client ID.</td>
+</tr>
+<tr>
+<td><code>scope</code></td>
+<td><code>user_profile observees grades</code></td>
+<td><strong>Required.</strong> Space-separated list of <a href="#scopes">scopes</a> you would like access to.</td>
+</tr>
+<tr>
+<td><code>redirect_uri</code></td>
+<td><code>https://dcraft.com/oauth2/response</code></td>
+<td><strong>Required.</strong> The URI where the user will be redirected after the authorization. Must match one of the Redirect URIs on your OAuth2 Credentials.</td>
+</tr>
+<tr>
+<td><code>purpose</code></td>
+<td><code>dCraft</code></td>
+<td>Helps the user identify what this token is for. Note that it will already say your app&#39;s name, so try to be more specific. Optional field, though.</td>
+</tr>
+</tbody></table>
+<h3 id='description'>Description</h3>
+<p>Prepare this URL, then send the user to it. <strong>Do not use anything (ex. URL shorteners like bit.ly) that hide the identity of this URL.</strong></p>
+
+<blockquote>
+<p>Example URL (send the user to this)</p>
+</blockquote>
+<pre class="highlight plaintext"><code>https://api.canvascbl.com/api/oauth2/auth?response_type=code&amp;client_id=d262d1d3-d969-4d48-ac1e-cfceec88b5c9&amp;scope=user_profile%20observees%20grades&amp;redirect_uri=https%3A%2F%2Fdcraft.com%2Foauth2%2Fresponse&amp;purpose=dCraft
+</code></pre>
+<p>The user will now be forwarded to an opaque URL for authorization. 
+If they accept or deny your request, they will be redirected to the redirect URI in the original request.</p>
+<h3 id='after-user-input'>After User Input</h3>
+<blockquote>
+<p>Success</p>
+</blockquote>
+<pre class="highlight plaintext"><code>https://dcraft.com/oauth2/response?code=3f17a378-b84a-4f42-a492-76f205364b81
+</code></pre>
+<blockquote>
+<p>Error</p>
+</blockquote>
+<pre class="highlight plaintext"><code>https://dcraft.com/oauth2/response?error=access_denied
+</code></pre>
+<p>After the user accepts or denies your request, they will be sent to your redirect URI with the following query params.
+Note that there is no guarantee control will return to your application as they may close the tab, etc.</p>
+
+<p>Success:</p>
+
+<table><thead>
+<tr>
+<th>Param</th>
+<th>Example Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>code</code></td>
+<td><code>3f17a378-b84a-4f42-a492-76f205364b81</code></td>
+<td>The code you&#39;ll need for your <a href="#token">token</a> request.</td>
+</tr>
+</tbody></table>
+
+<p>Error:</p>
+
+<table><thead>
+<tr>
+<th>Param</th>
+<th>Example Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>error</code></td>
+<td><code>access_denied</code></td>
+<td>What the error was.</td>
+</tr>
+</tbody></table>
+<h2 id='token'>Token</h2>
+<blockquote>
+<p>With a code</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/oauth2/token?</span><span class="se">\</span><span class="s2">
+grant_type=authorization_code</span><span class="se">\</span><span class="s2">
+&amp;client_id=d262d1d3-d969-4d48-ac1e-cfceec88b5c9</span><span class="se">\</span><span class="s2">
+&amp;client_secret=d314d3d41e051cb569c55fe6c34d3dac</span><span class="se">\</span><span class="s2">
+&amp;redirect_uri=https%3A%2F%2Fdcraft.com%2Foauth2%2Fresponse</span><span class="se">\</span><span class="s2">
+&amp;code=3f17a378-b84a-4f42-a492-76f205364b81"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">code</span> <span class="o">=</span> <span class="s1">'3f17a378-b84a-4f42-a492-76f205364b81'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">tokenRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'post'</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s1">'https://api.canvascbl.com/api/oauth2/token'</span><span class="p">,</span>
+  <span class="na">params</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">grant_type</span><span class="p">:</span> <span class="s1">'authorization_code'</span><span class="p">,</span>
+    <span class="na">client_id</span><span class="p">:</span> <span class="s1">'d262d1d3-d969-4d48-ac1e-cfceec88b5c9'</span><span class="p">,</span>
+    <span class="na">client_secret</span><span class="p">:</span> <span class="s1">'314d3d41e051cb569c55fe6c34d3dac'</span><span class="p">,</span>
+    <span class="na">redirect_uri</span><span class="p">:</span> <span class="s1">'https://dcraft.com/oauth2/response'</span><span class="p">,</span>
+    <span class="na">code</span><span class="p">:</span> <span class="nx">code</span> 
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>Code response</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"582caaaa-d89e-47f9-92a1-660d15be050a"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"refresh_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4d1dbae6-0fff-4873-8930-845231fd26bc"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"expires_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-01T21:35:03Z"</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">one</span><span class="w"> </span><span class="err">hour</span><span class="w"> </span><span class="err">later</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>With a refresh token</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -X POST <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/oauth2/token?</span><span class="se">\</span><span class="s2">
+grant_type=refresh_token</span><span class="se">\</span><span class="s2">
+&amp;client_id=d262d1d3-d969-4d48-ac1e-cfceec88b5c9</span><span class="se">\</span><span class="s2">
+&amp;client_secret=d314d3d41e051cb569c55fe6c34d3dac</span><span class="se">\</span><span class="s2">
+&amp;redirect_uri=https%3A%2F%2Fdcraft.com%2Foauth2%2Fresponse</span><span class="se">\</span><span class="s2">
+&amp;refresh_token=4d1dbae6-0fff-4873-8930-845231fd26bc"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">refreshToken</span> <span class="o">=</span> <span class="s1">'3f17a378-b84a-4f42-a492-76f205364b81'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">refreshTokenRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+  <span class="na">method</span><span class="p">:</span> <span class="s1">'post'</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s1">'https://api.canvascbl.com/api/oauth2/token'</span><span class="p">,</span>
+  <span class="na">params</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">grant_type</span><span class="p">:</span> <span class="s1">'refresh_token'</span><span class="p">,</span>
+    <span class="na">client_id</span><span class="p">:</span> <span class="s1">'d262d1d3-d969-4d48-ac1e-cfceec88b5c9'</span><span class="p">,</span>
+    <span class="na">client_secret</span><span class="p">:</span> <span class="s1">'314d3d41e051cb569c55fe6c34d3dac'</span><span class="p">,</span>
+    <span class="na">redirect_uri</span><span class="p">:</span> <span class="s1">'https://dcraft.com/oauth2/response'</span><span class="p">,</span>
+    <span class="na">refresh_token</span><span class="p">:</span> <span class="nx">refreshToken</span> 
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>Refresh token response</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f690f300-6fbb-4e17-a04a-bd032658ad13"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"expires_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-02-01T21:38:36Z"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>You can use the token endpoint either to refresh an expired access token (access tokens last an hour) or to get a new access and refresh token from a code.</p>
+<h3 id='endpoint-2'>Endpoint</h3>
+<p><code>POST /api/oauth2/token</code></p>
+<h3 id='query-string-2'>Query String</h3>
+<table><thead>
+<tr>
+<th>Param</th>
+<th>Required For</th>
+<th>Values or Example Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>grant_type</code></td>
+<td>Always</td>
+<td><code>authorization_code</code> or <code>refresh_token</code></td>
+<td>Represents what you want to do. <code>authorization_code</code> should be used when you have a <code>code</code> and <code>refresh_token</code> should be used when you have a refresh token and an expired access token.</td>
+</tr>
+<tr>
+<td><code>client_id</code></td>
+<td>Always</td>
+<td><code>d262d1d3-d969-4d48-ac1e-cfceec88b5c9</code></td>
+<td>Your Client ID.</td>
+</tr>
+<tr>
+<td><code>client_secret</code></td>
+<td>Always</td>
+<td><code>d314d3d41e051cb569c55fe6c34d3dac</code></td>
+<td>Your Client Secret.</td>
+</tr>
+<tr>
+<td><code>redirect_uri</code></td>
+<td>Always</td>
+<td><code>https://dcraft.com/oauth2/response</code></td>
+<td>The Redirect URI used when <a href="#request">first requesting the token</a>.</td>
+</tr>
+<tr>
+<td><code>code</code></td>
+<td><code>grant_type</code> = <code>authorization_code</code></td>
+<td>The code from your Redirect URI (<a href="#after-user-input">?</a>).</td>
+<td></td>
+</tr>
+<tr>
+<td><code>refresh_token</code></td>
+<td><code>grant_type</code> = <code>refresh_token</code></td>
+<td>The refresh token of the access token you&#39;d like to refresh.</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id='description-2'>Description</h3>
+<p>This endpoint is the final step in the OAuth2 process, and is also how you &#39;refresh&#39; an expired access token.</p>
+
+<p>Developer Keys (your Client ID and Client Secret) can have an unlimited number of OAuth2 Grants, but <strong>each grant may only have one valid access token at a time</strong>.
+This means that, if you want to use the CanvasCBL API concurrently (a completely supported behavior!) you need to be sure that each of your requests don&#39;t try to refresh the token at the same time.
+If you do that, you&#39;re establishing a <a href="https://en.wikipedia.org/wiki/Race_condition">race condition</a>-- don&#39;t do this!</p>
+
+<p>Access tokens expire after an hour. Refresh tokens do not expire, but users may revoke a grant (both the access and refresh token) at any time from their profile page.</p>
+
+<aside class="warning">
+This request must be performed from a server where the user can never see the full URL as it includes your Client Secret.
+</aside>
+<h3 id='storing-grants'>Storing Grants</h3>
+<p><strong>You may store grants in your database.</strong> However, you must (hopefully obviously) secure them as best as possible.
+If a valid access token is leaked, an attacker may use that token to retrieve information without your knowledge.</p>
+
+<p>It is not recommended to store your client secret in your database. Use an environment variable for that.</p>
+
+<p>You get a unique ID for every user in the response from this endpoint. Use that to store access and refresh tokens for a user.</p>
+<h2 id='logout'>Logout</h2>
+<blockquote>
+<p>Invalidate that token!</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X DELETE <span class="se">\</span>
+  -H <span class="s2">"Authorization: Bearer ilovecanvascbl"</span> <span class="se">\</span>
+  https://api.canvascbl.com/api/oauth2/token
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="s2">"method"</span><span class="p">:</span> <span class="s2">"delete"</span><span class="p">,</span>
+    <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/oauth2/token"</span><span class="p">,</span>
+    <span class="s2">"headers"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+</code></pre>
+<p>Logout lets you revoke an access token.</p>
+<h3 id='endpoint-3'>Endpoint</h3>
+<p><code>DELETE /api/oauth2/token</code></p>
+<h3 id='description-3'>Description</h3>
+<p>Logout invalidates the grant used to call it. It returns a <code>204 NO CONTENT</code>.</p>
+
+<p>When issuing this request, it&#39;s recommended to delete the grant associated with the used access token from your database.</p>
+
+<aside class="notice">
+Once you have revoked a grant, you can not use this grant's refresh token to get a new access token. If you need access again, you must go through the OAuth2 flow again.
+</aside>
+<h1 id='grades'>Grades</h1>
+<p>The most powerful part of the CanvasCBL API, by far.</p>
+<h2 id='get-grades'>Get Grades</h2>
+<blockquote>
+<p>Simple grades alone</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X GET <span class="se">\</span>
+  -H <span class="s2">"Authorization: ilovecanvascbl"</span> <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/v1/grades"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">gradesRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="na">method</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+    <span class="na">url</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/v1/grades"</span><span class="p">,</span>
+    <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// if you just care about the 'first' user's grades, you can do something like this:</span>
+<span class="kr">const</span> <span class="nx">grades</span> <span class="o">=</span>
+  <span class="c1">// get a k/v array from our object</span>
+  <span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">gradesRequest</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">simple_grades</span><span class="p">).</span>
+  <span class="c1">// reduce it into a single object</span>
+  <span class="nx">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">g</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// g[0] = class name</span>
+    <span class="c1">// g[1] = { userID: grade }</span>
+    <span class="c1">// Object.values(g[1]) = [grade]</span>
+    <span class="nx">acc</span><span class="p">[</span><span class="nx">g</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">g</span><span class="p">[</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">return</span> <span class="nx">acc</span><span class="p">;</span>
+
+    <span class="c1">// we have this empty object here as our starting value for reduce</span>
+    <span class="c1">// learn more: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce</span>
+  <span class="p">},</span> <span class="p">{});</span>
+<span class="cm">/*
+{ 'Calculus - S2 - Smith': 'A',
+  'Biology - S2 - Martinez': 'B',
+  'English 3 - S2 - Lee': 'A-',
+  'World History - S2 - Brown': 'A' }
+*/</span>
+
+<span class="c1">// if you want something iterable (and just the first user's grade), try something like this:</span>
+<span class="kr">const</span> <span class="nx">iterableGrades</span> <span class="o">=</span>
+  <span class="c1">// get a k/v array from our object</span>
+  <span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">gradesRequest</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">simple_grades</span><span class="p">).</span>
+  <span class="c1">// use map to transform each item</span>
+  <span class="nx">map</span><span class="p">(</span><span class="nx">g</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// g[0] = class name</span>
+    <span class="c1">// g[1] = { userID: grade }</span>
+    <span class="c1">// Object.values(g[1]) = [grade]</span>
+    <span class="k">return</span> <span class="p">[</span><span class="nx">g</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">g</span><span class="p">[</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">]]</span>
+  <span class="p">});</span>
+<span class="cm">/*
+[ [ 'Calculus - S2 - Smith', 'A' ],
+  [ 'Biology - S2 - Martinez', 'B' ],
+  [ 'English 3 - S2 - Lee', 'A-' ],
+  [ 'World History - S2 - Brown', 'A' ] ]
+*/</span>
+</code></pre>
+<blockquote>
+<p>Simple grades (no include[]) response</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"simple_grades"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"Calculus - S2 - Smith"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="err">//</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="err">(keys)</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">graded</span><span class="w"> </span><span class="err">user's</span><span class="w"> </span><span class="err">Canvas</span><span class="w"> </span><span class="err">ID</span><span class="w">
+      </span><span class="err">//</span><span class="w"> </span><span class="err">multiple</span><span class="w"> </span><span class="err">entries</span><span class="w"> </span><span class="err">will</span><span class="w"> </span><span class="err">appear</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">user</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">an</span><span class="w"> </span><span class="err">Observer</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">has</span><span class="w"> </span><span class="err">multiple</span><span class="w"> </span><span class="err">Observees</span><span class="w">
+      </span><span class="err">//</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">that</span><span class="w"> </span><span class="err">case</span><span class="p">,</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="err">do</span><span class="w"> </span><span class="err">NOT</span><span class="w"> </span><span class="err">need</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">Observees</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">scope.</span><span class="w">
+      </span><span class="s2">"1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"Biology - S2 - Martinez"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"B"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"English 3 - S2 - Lee"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A-"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"World History - S2 - Brown"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Two includes, just as a template (scopes required: <code>user_profile</code>, <code>observees</code>)</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X GET <span class="se">\</span>
+  -H <span class="s2">"Authorization: ilovecanvascbl"</span> <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/v1/grades?</span><span class="se">\</span><span class="s2">
+include[]=user_profile</span><span class="se">\</span><span class="s2">
+&amp;include[]=observees"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">gradesRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="na">method</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/v1/grades"</span><span class="p">,</span>
+  <span class="na">params</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">includes</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s1">'user_profile'</span><span class="p">,</span>
+      <span class="s1">'observees'</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+    <span class="nl">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>See the response <a href="static/grades_responses/profile_observees.json">here</a>.</p>
+
+<p>Kitchen Sink (simple grades, scopes: <code>user_profile</code>, <code>outcome_results</code>, <code>observees</code>, <code>courses</code>)</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X GET <span class="se">\</span>
+  -H <span class="s2">"Authorization: ilovecanvascbl"</span> <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/v1/grades?</span><span class="se">\</span><span class="s2">
+include[]=user_profile</span><span class="se">\</span><span class="s2">
+&amp;include[]=outcome_results</span><span class="se">\</span><span class="s2">
+&amp;include[]=observees</span><span class="se">\</span><span class="s2">
+&amp;include[]=courses"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kitchenSinkRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="na">method</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/v1/grades"</span><span class="p">,</span>
+  <span class="na">params</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">includes</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s1">'user_profile'</span><span class="p">,</span>
+      <span class="s1">'outcome_results'</span><span class="p">,</span>
+      <span class="s1">'observees'</span><span class="p">,</span>
+      <span class="s1">'courses'</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+    <span class="nl">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>See the response <a href="static/grades_responses/everything_simple_grades.json">here</a>.</p>
+
+<p>Kitchen Sink (detailed grades, scopes: <code>detailed_grades</code>, <code>user_profile</code>, <code>outcome_results</code>, <code>observees</code>, <code>courses</code>)</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X GET <span class="se">\</span>
+  -H <span class="s2">"Authorization: ilovecanvascbl"</span> <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/v1/grades?</span><span class="se">\</span><span class="s2">
+include[]=user_profile</span><span class="se">\</span><span class="s2">
+&amp;include[]=outcome_results</span><span class="se">\</span><span class="s2">
+&amp;include[]=observees</span><span class="se">\</span><span class="s2">
+&amp;include[]=courses</span><span class="se">\</span><span class="s2">
+&amp;include[]=detailed_grades"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kitchenSinkRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="na">method</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/v1/grades"</span><span class="p">,</span>
+  <span class="na">params</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">includes</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s1">'user_profile'</span><span class="p">,</span>
+      <span class="s1">'outcome_results'</span><span class="p">,</span>
+      <span class="s1">'observees'</span><span class="p">,</span>
+      <span class="s1">'courses'</span><span class="p">,</span>
+      <span class="s1">'detailed_grades'</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+    <span class="nl">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>See the response <a href="static/grades_responses/everything.json">here</a>.</p>
+</blockquote>
+<h3 id='endpoint-4'>Endpoint</h3>
+<p><code>GET /api/v1/grades</code></p>
+<h3 id='scopes-includes'>Scopes/Includes</h3>
+<p>Grades is a flexible endpoint that can return anything from just a user&#39;s class names and their grades to their profile, outcome results, outcome averages, full courses and more.</p>
+
+<p>You tell the grades endpoint what you want by using the <code>include[]</code> query parameter.</p>
+
+<p>If you do not include any <code>include[]</code> parameters, only <em>simple grades</em> will be returned. <em>Simple grades</em> just requres the <code>grades</code> scope.
+However, if you ask for <code>detailed_grades</code>, you will not get <em>simple grades</em>. It&#39;s one or the other.</p>
+
+<p>While the <code>include[]</code> parameter is intended to mirror <a href="#scopes">OAuth2 Scopes</a>, they may differ in the future, so the following table is here for convience.</p>
+
+<table><thead>
+<tr>
+<th>Includes Name</th>
+<th>Required Scope</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>detailed_grades</code></td>
+<td><code>detailed_grades</code></td>
+</tr>
+<tr>
+<td><code>user_profile</code></td>
+<td><code>user_profile</code></td>
+</tr>
+<tr>
+<td><code>outcome_results</code></td>
+<td><code>outcome_results</code></td>
+</tr>
+<tr>
+<td><code>observees</code></td>
+<td><code>observees</code></td>
+</tr>
+<tr>
+<td><code>courses</code></td>
+<td><code>courses</code></td>
+</tr>
+</tbody></table>
+<h3 id='description-4'>Description</h3>
+<p>Grades is, by far, the most powerful endpoint that the CanvasCBL API offers.</p>
+
+<p>When using it, though, there are a few things to note:</p>
+
+<ul>
+<li>It is a slow endpoint. It relies on many responses from Canvas, which can take a while. 
+If you want to set a reasonable timeout for this request, we recommend about 15 seconds.
+Normally, it takes 0.5-5 seconds, but we&#39;ve seen it as high as 14.</li>
+<li>It is an expensive endpoint. There is a lot of computation on both sides which is required to make this work.</li>
+<li>We recommend that you re-fetch grades on every reload of your app.</li>
+<li>The user&#39;s Canvas ID may not appear in grades-- that generally means that the user is an Observer. For information about their Observees, you&#39;ll want to request <code>observees</code>.</li>
+<li><strong>You may not store anything but profiles.</strong> Storing any information from this endpoint, (as you should know!-- except user_profile data) is a violation of the 
+CanvasCBL Developer Key Agreement and will cause a revocation of your developer key.</li>
+</ul>
+
+<p>If you&#39;re curious what the full response is from this endpoint (with all includes and scopes),
+you can click <a href="static/grades_responses/everything_simple_grades.json">here for everything (simple grades)</a> and <a href="static/grades_responses/everything.json">here for everything (detailed grades)</a>.</p>
+<h3 id='canvas-api-bindings'>Canvas API Bindings</h3>
+<p>Some of the <code>include[]</code> options return responses that <strong>essentially</strong> mirror Canvas&#39;s API.
+Not all fields will be there, notably large ones like descriptions. You can see what is and isn&#39;t included in the <a href="static/grades_responses/everything.json">Kitchen Sink response</a>.</p>
+
+<p>Here&#39;s a reference to those:</p>
+
+<table><thead>
+<tr>
+<th>Includes Name</th>
+<th>Canvas API Doc</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>user_info</code></td>
+<td><a href="https://canvas.instructure.com/doc/api/users.html#method.profile.settings"><code>GET /api/v1/users/:user_id/profile</code></a></td>
+</tr>
+<tr>
+<td><code>outcome_results</code></td>
+<td><a href="https://canvas.instructure.com/doc/api/outcome_results.html#method.outcome_results.index"><code>GET /api/v1/courses/:course_id/outcome_results</code></a></td>
+</tr>
+<tr>
+<td><code>observees</code></td>
+<td><a href="https://canvas.instructure.com/doc/api/user_observees.html#method.user_observees.index"><code>GET /api/v1/users/:user_id/observees</code></a></td>
+</tr>
+<tr>
+<td><code>courses</code></td>
+<td><a href="https://canvas.instructure.com/doc/api/courses.html#method.courses.index"><code>GET /api/v1/courses</code></a></td>
+</tr>
+</tbody></table>
+<h1 id='courses'>Courses</h1>
+<p>These APIs allow you to get auxiliary information about courses. Note that we do not have an API to get a course itself-- do this via <a href="#get-grades">Get Grades</a>, with the <code>courses</code> include.</p>
+<h2 id='get-assignments'>Get Assignments</h2>
+<blockquote>
+<p>Get assignments for course ID <code>1</code></p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X GET <span class="se">\</span>
+  -H <span class="s2">"Authorization: ilovecanvascbl"</span> <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/v1/courses/1/assignments"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kitchenSinkRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="na">method</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/v1/courses/1/assignments"</span><span class="p">,</span>
+    <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>Response: Assignments for course ID <code>1</code></p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"allowed_attempts"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"anonymize_students"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"anonymous_grading"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"anonymous_instructor_annotations"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"anonymous_peer_reviews"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"anonymous_submissions"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"assignment_group_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">326</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"automatic_peer_reviews"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"can_duplicate"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"course_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-08-26T15:04:16Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"due_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-08-24T05:59:59Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"due_date_required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"final_grader_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"free_form_criterion_comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"grade_group_students_individually"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"grader_comments_visible_to_graders"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"grader_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"grader_names_visible_to_final_grader"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"graders_anonymous_to_graders"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"grading_standard_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"grading_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not_graded"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"group_category_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_submitted_submissions"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"html_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://canvas.instructure.com/courses/1/assignments/1"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"in_closed_grading_period"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"intra_group_peer_reviews"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"is_quiz_assignment"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lock_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lock_explanation"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"lock_info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"asset_string"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"can_view"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"lock_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"locked_for_user"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"max_name_length"</span><span class="p">:</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"moderated_grading"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"muted"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assignment Name"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"omit_from_final_grade"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"only_visible_to_overrides"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"original_assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"original_assignment_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"original_course_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"original_quiz_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"peer_reviews"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"points_possible"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"position"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"post_manually"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"post_to_sis"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"published"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"quiz_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"rubric"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"rubric_settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"free_form_criterion_comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"hide_points"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"hide_score_total"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"points_possible"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"secure_params"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6Iijil4_vvL5v77y-4pePKSJ9.81MdexcyaAsnMEpSWstOvbkpFhKpl9sO0wLbuh01DL4"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"submission_types"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"not_graded"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="s2">"submissions_download_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://canvas.instructure.com/courses/1/assignments/1/submissions?zip=1"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"unlock_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-17T01:39:57Z"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"use_rubric_for_grading"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"workflow_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>Get all assignments for a course.</p>
+<h3 id='endpoint-5'>Endpoint</h3>
+<p><code>GET /api/v1/courses/:courseID/assignments</code></p>
+<h3 id='scopes-2'>Scopes</h3>
+<ul>
+<li><code>assignments</code></li>
+</ul>
+<h3 id='description-5'>Description</h3>
+<p>This endpoint lets you get all assignments for a course.</p>
+
+<p>Mostly a mirror of <a href="https://canvas.instructure.com/doc/api/assignments.html#method.assignments_api.index">this</a> Canvas endpoint.</p>
+<h2 id='get-outcome-alignments'>Get Outcome Alignments</h2>
+<blockquote>
+<p>Get outcome alignments for course ID <code>1</code> and student ID <code>1</code></p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X GET <span class="se">\</span>
+  -H <span class="s2">"Authorization: ilovecanvascbl"</span> <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/v1/courses/1/outcome_alignments?</span><span class="se">\</span><span class="s2">
+student_id=1"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kitchenSinkRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="na">method</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/v1/courses/1/outcome_alignments"</span><span class="p">,</span>
+  <span class="na">params</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">student_id</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="p">}</span>
+    <span class="nl">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>Response: Outcome alignments for course ID <code>1</code> and student ID <code>1</code></p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"learning_outcome_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Outcome A"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"assignment_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"submission_types"</span><span class="p">:</span><span class="w"> </span><span class="s2">"on_paper"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://canvas.instructure.com/courses/1/assignments/1"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>Gets Outcome Alignments for a course.</p>
+<h3 id='endpoint-6'>Endpoint</h3>
+<p><code>GET /api/v1/courses/:courseID/outcome_alignments</code></p>
+<h3 id='scopes-3'>Scopes</h3>
+<ul>
+<li><code>alignments</code></li>
+</ul>
+<h3 id='query-string-3'>Query String</h3>
+<table><thead>
+<tr>
+<th>Param</th>
+<th>Example Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>student_id</code></td>
+<td><code>1</code></td>
+<td><strong>Required.</strong> Canvas ID of the user you want alignments for.</td>
+</tr>
+</tbody></table>
+<h3 id='description-6'>Description</h3>
+<p>This endpoint gets outcome alignments for a course on Canvas.</p>
+
+<p>Mostly a mirror of <a href="https://canvas.instructure.com/doc/api/outcomes.html#method.outcomes_api.outcome_alignments">this</a> Canvas endpoint.</p>
+<h1 id='outcomes'>Outcomes</h1>
+<p>These endpoints are about <a href="https://canvas.instructure.com/doc/api/outcomes.html">Canvas Outcomes</a>.</p>
+<h2 id='get-an-outcome'>Get an Outcome</h2>
+<blockquote>
+<p>Get outcome ID <code>1</code></p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="se">\</span>
+  -X GET <span class="se">\</span>
+  -H <span class="s2">"Authorization: ilovecanvascbl"</span> <span class="se">\</span>
+  <span class="s2">"https://api.canvascbl.com/api/v1/outcomes/1"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kitchenSinkRequest</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">axios</span><span class="p">({</span>
+    <span class="na">method</span><span class="p">:</span> <span class="s2">"GET"</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">:</span> <span class="s2">"https://api.canvascbl.com/api/v1/outcomes/1"</span><span class="p">,</span>
+    <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Authorization"</span><span class="p">:</span> <span class="s2">"Bearer ilovecanvascbl"</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>Response: Outcome ID <code>1</code></p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"assessed"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"calculation_int"</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"calculation_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"decaying_average"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"can_edit"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"context_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"context_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Course"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"display_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Outcome A"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_updateable_rubrics"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"mastery_points"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"points_possible"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"ratings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"points"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Full Title for Outcome A"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/api/v1/outcomes/1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"vendor_guid"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='endpoint-7'>Endpoint</h3>
+<p><code>GET /api/v1/outcomes/:outcomeID</code></p>
+<h3 id='scopes-4'>Scopes</h3>
+<ul>
+<li><code>outcomes</code></li>
+</ul>
+<h3 id='description-7'>Description</h3>
+<p>Lets you get information about a single Outcome on Canvas.</p>
+
+<p>Mostly a mirror of <a href="https://canvas.instructure.com/doc/api/outcomes.html#method.outcomes_api.outcome_alignments">this</a> Canvas endpoint.</p>
+<h1 id='errors'>Errors</h1>
+<blockquote>
+<p>Example Error</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"example error message"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<aside class="notice">
+Due to the sheer number of possible errors, it is not possible for us to document them all. We encourage you to play around with the API to get a feel for the errors.
+</aside>
+
+<p>This section discusses Error Handling in the CanvasCBL API.</p>
+
+<p>All errors are in JSON. See the example on the right.</p>
+<h2 id='session-error'>Session Error</h2>
+<blockquote>
+<p>Session error text</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no session string (pass it in via the session_string cookie)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This means that <strong>you have not passed in an Access Token</strong> via the Authorization header. This error won&#39;t show up if you pass in an invalid token, just a missing one.</p>
+<h2 id='validation-errors'>Validation Errors</h2>
+<blockquote>
+<p>Validation Error Structure</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;invalid/missing&gt; &lt;param name&gt; as &lt;param type, like url or query&gt; param"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Trying to submit <code>abcdef</code> as an outcome ID</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid outcomeID as query param"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Validation errors pop up all the time, and they all take on the same form.</p>
+
+<p>See the example on the right.</p>
+<h2 id='oauth2-errors'>OAuth2 Errors</h2>
+<p>OAuth2 Errors are self-evident:</p>
+
+<ul>
+<li><code>missing requested scope</code></li>
+<li><code>invalid access token</code></li>
+<li><code>invalid refresh_token</code></li>
+<li>...</li>
+</ul>
+
+<p>If you encounter an error you feel should be here, please help us out and document it!
+These docs are open-source at <a href="https://github.com/canvascbl/api-docs">github.com/canvascbl/api-docs</a>.</p>
+<h2 id='grades-errors'>Grades Errors</h2>
+<blockquote>
+<p>Example Grades Error With an Action</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"after refreshing the token, it is invalid"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"redirect_to_oauth"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Grades errors sometimes include an action.</p>
+
+<table><thead>
+<tr>
+<th>Action</th>
+<th>What you should do</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>redirect_to_oauth</code></td>
+<td>Tell the user to log into CanvasCBL at <a href="https://canvascbl.com">canvascbl.com</a>, then try again.</td>
+</tr>
+<tr>
+<td><code>retry_once</code></td>
+<td>Just try again in a sec.</td>
+</tr>
+</tbody></table>
+
+<p>If no action is included, it&#39;s probably due to an extraordinary circumstance.</p>
+
+<p>Currently, all possible grades errors are to the right.</p>
+<pre class="highlight go tab-go"><code><span class="k">const</span><span class="x"> </span><span class="p">(</span><span class="x">
+    </span><span class="n">gradesErrorNoTokens</span><span class="x">              </span><span class="o">=</span><span class="x"> </span><span class="s">"no stored tokens for this user"</span><span class="x">
+    </span><span class="n">gradesErrorRevokedToken</span><span class="x">          </span><span class="o">=</span><span class="x"> </span><span class="s">"the token/refresh token has been revoked or no longer works"</span><span class="x">
+    </span><span class="n">gradesErrorRefreshedTokenError</span><span class="x">   </span><span class="o">=</span><span class="x"> </span><span class="s">"after refreshing the token, it is invalid"</span><span class="x">
+    </span><span class="n">gradesErrorUnknownCanvasError</span><span class="x">    </span><span class="o">=</span><span class="x"> </span><span class="s">"there was an unknown error from canvas"</span><span class="x">
+    </span><span class="n">gradesErrorInvalidInclude</span><span class="x">        </span><span class="o">=</span><span class="x"> </span><span class="s">"invalid include"</span><span class="x">
+    </span><span class="n">gradesErrorUnauthorizedScope</span><span class="x">     </span><span class="o">=</span><span class="x"> </span><span class="s">"your oauth2 grant doesn't have one or more requested scopes"</span><span class="x">
+    </span><span class="n">gradesErrorInvalidAccessToken</span><span class="x">    </span><span class="o">=</span><span class="x"> </span><span class="s">"invalid access token"</span><span class="x">
+</span><span class="p">)</span><span class="x">
+</span></code></pre><h2 id='errors-from-canvas'>Errors From Canvas</h2>
+<p>Errors from Canvas will use the non-standard HTTP Status Code <code>450</code>.
+There are various reasons we chose to do this, but mostly, it&#39;s because almost every error from Canvas is
+user-error, for example when you enter an invalid Outcome ID.</p>
+<h1 id='glossary'>Glossary</h1>
+<p>The glossary contains definitions for terms that may not be clear throughout the documentation.</p>
+<h2 id='developer-key'>Developer Key</h2>
+<blockquote>
+<p>Client ID</p>
+</blockquote>
+<pre class="highlight plaintext"><code>d262d1d3-d969-4d48-ac1e-cfceec88b5c9
+</code></pre>
+<blockquote>
+<p>Client Secret</p>
+</blockquote>
+<pre class="highlight plaintext"><code>d262d1d3-d969-4d48-ac1e-cfceec88b5c9
+</code></pre>
+<p>A Client ID/Client Secret combo. These are granted, upon request and review, by CanvasCBL alone.</p>
+
+<p>They may never be shared or posted publicly.</p>
+<h2 id='oauth2-credential'>OAuth2 Credential</h2>
+<p>Another term for a <a href="#developer-key">Developer Key</a>.</p>
+<h2 id='oauth2-grant'>OAuth2 Grant</h2>
+<p>An OAuth2 Grant is a Access/Refresh Token combo. They are linked to a Redirect URI, a number of scopes, and a <a href="#developer-key">Developer Key</a>.</p>
+
+<p>You can see an example grant response in the <a href="#token">Token request documentation</a>.</p>
+<h2 id='oauth2-redirect-uri'>OAuth2 Redirect URI</h2>
+<blockquote>
+<p>Example Redirect URI</p>
+</blockquote>
+<pre class="highlight plaintext"><code>https://dcraft.com/oauth2/response
+</code></pre>
+<p>Where users will be sent after accepting/denying your OAuth2 Request.</p>
+<h2 id='access-token'>Access Token</h2>
+<p>Short-lived tokens that <strong>grant access to resources</strong>. Currently, they last an hour.</p>
+
+<p>They can be regenerated with a <a href="#refresh-token">Refresh Token</a>.</p>
+<h2 id='refresh-token'>Refresh Token</h2>
+<p>Long-lived tokens that can be used, along with some other information, to get new <a href="#access-token">Access Tokens</a>.</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+                <a href="#" data-language-name="javascript">javascript</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
